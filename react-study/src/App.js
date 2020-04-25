@@ -1,26 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import JsxText from "./components/JsxText";
+import StateMgt from "./components/StateMgt";
+import EventHandle from "./components/EventHandle";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+// class App extends Component {
+// 	render() {
+// 		return (
+// 			<div>
+// 				<h1>{this.props.title}</h1>
+// 				<JsxText></JsxText>
+// 			</div>
+// 		)
+// 	}
+// }
+
+function App(props) {
+	return (
+		<div>
+			<h1>{props.title}</h1>
+			<JsxText></JsxText>
+			{/* 状态管理 */}
+			<StateMgt></StateMgt>
+			<EventHandle></EventHandle>
+		</div>
+	)
 }
 
 export default App;
