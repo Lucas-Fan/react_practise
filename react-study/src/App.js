@@ -7,6 +7,14 @@ import HocTest from "./components/HocTest"
 import Composition from './components/Composition';
 import HooksTest from './components/HooksTest';
 
+// import "antd/dist/antd.css";
+// import Button from 'antd/lib/button';
+
+import { Button } from "antd";
+import KFormTest from './components/KFormTest';
+import Dialog from './components/Dialog';
+import MyTreeNode from './components/MyTreeNode';
+import ReduxTest from './components/ReduxTest';
 
 // class App extends Component {
 // 	render() {
@@ -35,8 +43,20 @@ function App(props) {
 			<Composition></Composition>
 			{/* hooks */}
 			<HooksTest></HooksTest>
+			<Button>antd</Button>
+			{/* 表单组件 */}
+			<KFormTest></KFormTest>
+			{/* Dialog */}
+			<Dialog>
+				something
+			</Dialog>
+			{/* tree */}
+			<MyTreeNode></MyTreeNode>
+			{/* redux */}
+			<ReduxTest></ReduxTest>
 		</div>
 	)
 }
 
 export default App;
+ 
